@@ -97,7 +97,7 @@ mod tests {
 
     app.update();
     let values = app
-      .world
+      .world_mut()
       .resource_mut::<ConsumableEvents<TestEvent>>()
       .read()
       .map(|event| event.value)
@@ -106,7 +106,7 @@ mod tests {
 
     app.update();
     let values = app
-      .world
+      .world_mut()
       .resource_mut::<ConsumableEvents<TestEvent>>()
       .read()
       .map(|event| event.value)
@@ -125,7 +125,7 @@ mod tests {
 
     app.update();
     let values = app
-      .world
+      .world_mut()
       .resource_mut::<ConsumableEvents<TestEvent>>()
       .read()
       .map(|event| event.value)
@@ -134,7 +134,7 @@ mod tests {
 
     app.update();
     let values = app
-      .world
+      .world_mut()
       .resource_mut::<ConsumableEvents<TestEvent>>()
       .read()
       .map(|event| event.value)
